@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow" />
+    <title>Мои друзья</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="css/emoji.css" rel="stylesheet">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/fav.png" />
+</head>
+<body>
+
+    <!-- Header
+       ================================================= -->
+    <header id="header" class="lazy-load">
+        <nav class="navbar navbar-default navbar-fixed-top menu">
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index-register.html"><img src="images/logo.png" alt="logo" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right main-menu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Главная <span><img src="images/down-arrow.png" alt="" /></span></a>
+                            <ul class="dropdown-menu newsfeed-home">
+                                <li><a href="index.html">Страница 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Перейти <span><img src="images/down-arrow.png" alt="" /></span></a>
+                            <ul class="dropdown-menu newsfeed-home">
+                                <li><a href="newsfeed.html">Новости</a></li>
+                                <li><a href="newsfeed-friends.html">Друзья</a></li>
+                                <li><a href="newsfeed-messages.html">Чат</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Контакты</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right hidden-sm">
+                        <div class="form-group">
+                            <i class="icon ion-android-search"></i>
+                            <input type="text" class="form-control" placeholder="Поиск друзей, фото, групп...">
+                        </div>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>
+    </header>
+    <!--Header End-->
+
+    <div id="page-contents">
+        <div class="container">
+            <div class="row">
+
+                <!-- Newsfeed Common Side Bar Left
+            ================================================= -->
+                <div class="col-md-3 static">
+                    <div class="profile-card">
+                        <img src="#" alt="user" class="profile-photo" />
+                        <h5><a href="timeline.html" class="text-white">Имя Фамилия</a></h5>
+                        <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 13 подписчиков</a>
+                    </div><!--profile card ends-->
+                    <ul class="nav-news-feed">
+                        <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed.html">Моя лента</a></div></li>
+                        <li><i class="icon ion-ios-people-outline"></i><div><a href="newsfeed-friends.html">Друзья</a></div></li>
+                        <li><i class="icon ion-chatboxes"></i><div><a href="newsfeed-messages.html">Чат</a></div></li>
+                    </ul><!--news-feed links ends-->
+                    <div id="chat-block">
+                        <div class="title">Чат</div>
+                        <ul class="online-users list-inline">
+                            <li><a href="newsfeed-messages.html" title="Друг 1"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 2"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 3"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 4"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 5"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 6"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 7"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 8"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                            <li><a href="newsfeed-messages.html" title="Друг 9"><img src="http://placehold.it/300x300" alt="Пользователь" class="img-responsive profile-photo" /><span class="online-dot"></span></a></li>
+                        </ul>
+                    </div><!--chat block ends-->
+                </div>
+
+                <div class="col-md-7">
+                    <div class="col-md-7">
+
+                        <!-- Post Create Box
+                    ================================================= -->
+                        <div class="create-post">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="form-group">
+                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-md" />
+                                        <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Поделитесь новостью..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-5">
+                                    <div class="tools">
+                                        <ul class="publishing-tools list-inline">
+                                            <li><a href="#"><i class="ion-compose"></i></a></li>
+                                            <li><a href="#"><i class="ion-images"></i></a></li>
+                                            <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
+                                            <li><a href="#"><i class="ion-map"></i></a></li>
+                                        </ul>
+                                        <button class="btn btn-primary pull-right">Опубликовать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Post Create Box End-->
+                        <!-- Chat Room
+                    ================================================= -->
+                        <div class="chat-room">
+                            <div class="row">
+                                <div class="col-md-5">
+
+                                    <!-- Contact List in Left-->
+                                    <ul class="nav nav-tabs contact-list scrollbar-wrapper scrollbar-outer">
+                                        <li class="active">
+                                            <a href="#contact-1" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>Друг 1</h6>
+                                                        <p class="text-muted">Привет! Как дела?</p>
+                                                        <small class="text-muted">минуту назад</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-2" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>Julia Cox</h6>
+                                                        <p class="text-muted">пока!</p>
+                                                        <small class="text-muted">час назад</small>
+                                                        <div class="seen"><i class="icon ion-checkmark-round"></i></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-3" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>Sophia Lee</h6>
+                                                        <p class="text-muted">Ладно, спасибо</p>
+                                                        <small class="text-muted">13 часов назад</small>
+                                                        <div class="replied"><i class="icon ion-reply"></i></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-4" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>John Doe</h6>
+                                                        <p class="text-muted">привет?</p>
+                                                        <small class="text-muted">вчера</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-5" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>Anna Young</h6>
+                                                        <p class="text-muted">ладно, я пошел</p>
+                                                        <small class="text-muted">2 дня назад</small>
+                                                        <div class="seen"><i class="icon ion-checkmark-round"></i></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-6" data-toggle="tab">
+                                                <div class="contact">
+                                                    <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                    <div class="msg-preview">
+                                                        <h6>Richard Bell</h6>
+                                                        <p class="text-muted">Эй?</p>
+                                                        <small class="text-muted">2 дня назад</small>
+                                                        <div class="chat-alert">1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul><!--Contact List in Left End-->
+
+                                </div>
+                                <div class="col-md-7">
+
+                                    <!--Chat Messages in Right-->
+                                    <div class="tab-content scrollbar-wrapper wrapper scrollbar-outer">
+                                        <div class="tab-pane active" id="contact-1">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-2">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-3">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-4">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-5">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="contact-6">
+                                            <div class="chat-body">
+                                                <ul class="chat-message">
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, как дела?</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>Привет, отлично</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>было весело <i class="em em-blush"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p>классно! <i class="em em-expressionless"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="right">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Имя Фамилия</h5>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                            <p><i class="em em-hand"></i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="left">
+                                                        <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                                        <div class="chat-item">
+                                                            <div class="chat-item-header">
+                                                                <h5>Друг 1</h5>
+                                                                <small class="text-muted">a min ago</small>
+                                                            </div>
+                                                            <p>Привет, как ты?</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--Chat Messages in Right End-->
+
+                                    <div class="send-message">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Введите ваше сообщение">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">Отправить</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsfeed Common Side Bar Right
+                ================================================= -->
+                    <div class="col-md-2 static">
+                        <div class="suggestions" id="sticky-sidebar">
+                            <h4 class="grey">Рекомендуемые друзья</h4>
+                            <div class="follow-user">
+                                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                <div>
+                                    <h5><a href="timeline.html">Рекомендуемый друг 1</a></h5>
+                                    <a href="#" class="text-green">Добавить</a>
+                                </div>
+                            </div>
+                            <div class="follow-user">
+                                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                <div>
+                                    <h5><a href="timeline.html">Рекомендуемый друг 2</a></h5>
+                                    <a href="#" class="text-green">Добавить</a>
+                                </div>
+                            </div>
+                            <div class="follow-user">
+                                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                <div>
+                                    <h5><a href="timeline.html">Рекомендуемый друг 3</a></h5>
+                                    <a href="#" class="text-green">Добавить</a>
+                                </div>
+                            </div>
+                            <div class="follow-user">
+                                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                <div>
+                                    <h5><a href="timeline.html">Рекомендуемый друг 4</a></h5>
+                                    <a href="#" class="text-green">Добавить</a>
+                                </div>
+                            </div>
+                            <div class="follow-user">
+                                <img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />
+                                <div>
+                                    <h5><a href="timeline.html">Рекомендуемый друг 5</a></h5>
+                                    <a href="#" class="text-green">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer
+     ================================================= -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrapper">
+                        <div class="col-md-3 col-sm-3">
+                            <a href=""><img src="images/logo-black.png" alt="" class="footer-logo" /></a>
+                            <ul class="list-inline social-icons">
+                                <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h6>Для пользователей</h6>
+                            <ul class="footer-links">
+                                <li><a href="">Регистрация</a></li>
+                                <li><a href="">Вход</a></li>
+                                <li><a href="">Приложение</a></li>
+                                <li><a href="">Настройки языка</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h6>О нас</h6>
+                            <ul class="footer-links">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Политика использования</a></li>
+                                <li><a href="">Правила</a></li>
+                                <li><a href="">Поддержка</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h6>Контакты</h6>
+                            <ul class="contact">
+                                <li><i class="icon ion-ios-telephone-outline"></i>+7 777 123 4567</li>
+                                <li><i class="icon ion-ios-email-outline"></i>info@mail.com</li>
+                                <li><i class="icon ion-ios-location-outline"></i>Гагарина, 115</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Все права защищены. 2022 г.</p>
+            </div>
+        </footer>
+
+        <!--preloader-->
+        <div id="spinner-wrapper">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Scripts
+    ================================================= -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky-kit.min.js"></script>
+        <script src="js/jquery.scrollbar.min.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+</html>

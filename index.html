@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow" />
+		<title>Социальная сеть</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	</head>
+    <body>
+
+        <!--preloader-->
+        <div id="spinner-wrapper">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Header
+    ================================================= -->
+        <header id="header" class="lazy-load">
+            <nav class="navbar navbar-default navbar-fixed-top menu">
+                <div class="container">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index-register.html"><img src="images/logo.png" alt="logo" /></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right main-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Главная <span><img src="images/down-arrow.png" alt="" /></span></a>
+                                <ul class="dropdown-menu newsfeed-home">
+                                    <li><a href="index.html">Страница 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Перейти <span><img src="images/down-arrow.png" alt="" /></span></a>
+                                <ul class="dropdown-menu newsfeed-home">
+                                    <li><a href="newsfeed.html">Новости</a></li>
+                                    <li><a href="newsfeed-friends.html">Друзья</a></li>
+                                    <li><a href="newsfeed-messages.html">Чат</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Контакты</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right hidden-sm">
+                            <div class="form-group">
+                                <i class="icon ion-android-search"></i>
+                                <input type="text" class="form-control" placeholder="Поиск друзей, фото, групп...">
+                            </div>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </nav>
+        </header>
+        <!--Header End-->
+        <!-- Top Banner
+    ================================================= -->
+        <section id="banner">
+            <div class="container">
+
+                <!-- Sign Up Form
+            ================================================= -->
+                <div class="sign-up-form">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt="Социальная сеть" /></a>
+                    <h2 class="text-white">Найди друзей!</h2>
+                    <div class="line-divider"></div>
+                    <div class="form-wrapper">
+                        <p class="signup-text">Зарегистрируйся и познакомься со многими разными людьми!</p>
+                        <form action="#">
+                            <fieldset class="form-group">
+                                <input type="text" class="form-control" id="example-name" placeholder="Введи имя">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="email" class="form-control" id="example-email" placeholder="Введи email">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="password" class="form-control" id="example-password" placeholder="Введи пароль">
+                            </fieldset>
+                        </form>
+                        <p>Регистрируясь вы соглашаетесь с правилами</p>
+                        <button class="btn-secondary">Зарегистрироваться</button>
+                    </div>
+                    <a href="#">Уже есть аккаунт?</a>
+                    <img class="form-shadow" src="images/bottom-shadow.png" alt="" />
+                </div><!-- Sign Up Form End -->
+
+                <svg class="arrows hidden-xs hidden-sm">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Features Section
+    ================================================= -->
+        <section id="features">
+            <div class="container wrapper">
+                <h1 class="section-title slideDown">социальная сеть</h1>
+                <div class="row slideUp">
+                    <div class="feature-item col-md-2 col-sm-6 col-xs-6 col-md-offset-2">
+                        <div class="feature-icon"><i class="icon ion-person-add"></i></div>
+                        <h3>Найди друзей</h3>
+                    </div>
+                    <div class="feature-item col-md-2 col-sm-6 col-xs-6">
+                        <div class="feature-icon"><i class="icon ion-images"></i></div>
+                        <h3>Публикуй посты</h3>
+                    </div>
+                    <div class="feature-item col-md-2 col-sm-6 col-xs-6">
+                        <div class="feature-icon"><i class="icon ion-chatbox-working"></i></div>
+                        <h3>Приватные чаты</h3>
+                    </div>
+                    <div class="feature-item col-md-2 col-sm-6 col-xs-6">
+                        <div class="feature-icon"><i class="icon ion-compose"></i></div>
+                        <h3>Создавай опросы</h3>
+                    </div>
+                </div>
+                <h2 class="sub-title">найди классных людей как ты</h2>
+                <div id="incremental-counter" data-value="101242"></div>
+                <p>Зарегистрированных пользователей</p>
+                <img src="images/face-map.png" alt="" class="img-responsive face-map slideUp hidden-sm hidden-xs" />
+            </div>
+
+        </section>
+
+        <!-- Download Section
+    ================================================= -->
+        <section id="app-download">
+            <div class="container wrapper">
+                <h1 class="section-title slideDown">скачать</h1>
+                <ul class="app-btn list-inline slideUp">
+                    <li><button class="btn-secondary"><img src="images/app-store.png" alt="App Store" /></button></li>
+                    <li><button class="btn-secondary"><img src="images/google-play.png" alt="Google Play" /></button></li>
+                </ul>
+                <h2 class="sub-title">будь на связи, всегда, везде</h2>
+            </div>
+        </section>
+
+
+        <!-- Facts Section
+    ================================================= -->
+        <section id="site-facts">
+            <div class="container wrapper">
+                <div class="circle">
+                    <ul class="facts-list">
+                        <li>
+                            <div class="fact-icon"><i class="icon ion-ios-people-outline"></i></div>
+                            <h3 class="text-white">1,01,242</h3>
+                            <p>Пользователей</p>
+                        </li>
+                        <li>
+                            <div class="fact-icon"><i class="icon ion-images"></i></div>
+                            <h3 class="text-white">21,01,242</h3>
+                            <p>Постов</p>
+                        </li>
+                        <li>
+                            <div class="fact-icon"><i class="icon ion-checkmark-round"></i></div>
+                            <h3 class="text-white">41,242</h3>
+                            <p>Людей онлайн</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- Footer
+    ================================================= -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrapper">
+                        <div class="col-md-3 col-sm-3">
+                            <a href=""><img src="images/logo-black.png" alt="" class="footer-logo" /></a>
+                            <ul class="list-inline social-icons">
+                                <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+                                <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h6>Для пользователей</h6>
+                            <ul class="footer-links">
+                                <li><a href="">Регистрация</a></li>
+                                <li><a href="">Вход</a></li>
+                                <li><a href="">Приложение</a></li>
+                                <li><a href="">Настройки языка</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h6>О нас</h6>
+                            <ul class="footer-links">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Политика использования</a></li>
+                                <li><a href="">Правила</a></li>
+                                <li><a href="">Поддержка</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h6>Контакты</h6>
+                            <ul class="contact">
+                                <li><i class="icon ion-ios-telephone-outline"></i>+7 777 123 4567</li>
+                                <li><i class="icon ion-ios-email-outline"></i>info@mail.com</li>
+                                <li><i class="icon ion-ios-location-outline"></i>Гагарина, 115</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Все права защищены. 2022 г.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts
+    ================================================= -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.appear.min.js"></script>
+        <script src="js/jquery.incremental-counter.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
